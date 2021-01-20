@@ -1,6 +1,6 @@
 # Supopkite
 
-#### A student's attempt for the real-time 3D tracking of a kite sail in C++, using OpenCV and Eigen
+#### A student's attempt for the real-time 3D tracking of a kite sail in C++ using OpenCV and Eigen
 
 
 
@@ -10,7 +10,7 @@ In these prototypes, the control of the kite sail's position, velocity and orien
 
 During seven weeks, we formed a group of three students attempting to build from scratch a computer vision prototype for the real-time 3D tracking of a kite sail, aiming to replace the inboard sensors of the sail by a centralized tracking camera system. Such prototype could be an alternative technique to optimize the controlled-behaviour of the kite sail.
 
-This repository submits the C++ code we produced, mainly based on the OpenCV library. The tracking parameters of the code were tuned using a dataset of records of our own kite in various conditions of luminosity. In the end, the code is not mature enough yet as the different functions are not merged yet, but it is an interesting move forward part of a bigger work that includes a GoPro/Raspberry prototype.
+This repository submits the C++ code we produced, mainly based on the OpenCV library. The tracking parameters of the code were tuned using a dataset of records of our own kite in various conditions of luminosity. In the end, the code is not mature enough yet as the different functions are not merged, but it is an interesting move forward part of a bigger work that includes a GoPro/Raspberry prototype.
 
 ## Build
 
@@ -48,7 +48,7 @@ We attempted to retrieve the position and orientation of a kite sail in the fiel
   ./supopkite ../ressources/test_orientation.mp4 -orientation
   ```
 
-  
+  ​	
 
 - The `-newdata` mode projects a 3D model of the kitesail (.stl) in order to find the best match, i.e. the orientation of the 3D model that best matches the observed kite. Matching is supposed to be computed using a cross-correlation product in the Fourier domain, but this part of the code is unfinished.
 
@@ -57,8 +57,6 @@ We attempted to retrieve the position and orientation of a kite sail in the fiel
   ```
 
 ## License & dependencies
-
-`Created by Aymeric HALÉ, Charlotte MILLET & François OLLITRAULT.`
 
 ```
 // Created by Aymeric HALÉ, Charlotte MILLET & François OLLITRAULT.
